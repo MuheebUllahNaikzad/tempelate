@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><index class="html"></index></title>
-    <style>
-      img {
-        float: center;
-        width: 100px;
-        height: 100px;
-        float: initial;
-        border-radius: 50px;
-        margin: auto;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>iConvert Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="iphone">
+        <div class="notch-container">
+            <div class="status-bar">
+                <span id="clock">9:41</span>
+                <div class="dynamic-island"></div>
+                <div class="status-icons">📶 🪫</div>
+            </div>
+        </div>
 
-      h1 {
-        color: darkslategrey;
-        font-style: oblique;
-      }
+        <main class="converter-screen">
+            <header>
+                <select id="category-selector" class="category-pill">
+                    <option value="mass">Weight & Mass</option>
+                    <option value="length">Length</option>
+                    <option value="volume">Volume</option>
+                    <option value="area">Area</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+            </header>
 
-      h p.intro {
-        size: 24px;
-        font: caption;
-      }
+            <div class="display-area">
+                <div class="unit-row active" id="row-from">
+                    <select id="unit-from" class="unit-label"></select>
+                    <div class="value-display" id="input-val">0</div>
+                </div>
+                
+                <div class="divider">
+                    <span>⇅</span>
+                </div>
 
-      h1.text {
-        color: saddlebrown;
-        font-style: normal;
-      }
+                <div class="unit-row" id="row-to">
+                    <select id="unit-to" class="unit-label"></select>
+                    <div class="value-display result" id="output-val">0</div>
+                </div>
+            </div>
 
-      p.address {
-        font: italic;
-        float: inherit;
-      }
-
-      p.zip_code {
-        font: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <img src="images/Muheeb.jpg" alt="Muheeb Ullah Naikzad's image" />
-    <h1>Self Introduction:</h1>
-    <p class="intro">My name is Muheeb Ullah, You can call me Mohib</p>
-    <h1>Address:</h1>
-    <p class="address">Mohalla College road, Chaman, Balochistan, Pakistan</p>
-    <p class="zip_code">ZIP CODE: CHAMAN 86000</p>
-    <h1>Contact:</h1>
-    <a href="mailto:mohib2581125811@gmail.com">Email address</a><br />
-    <a href="https://wa.me/923138159018">
-      Click here to send me a message on Whatsapp</a
-    ><br />
-    <a href="https://www.facebook.com/share/16MrndqzYa/"> Join me on facebook</a
-    ><br />
-    <a href="https://www.youtube.com/@Naikzad"
-      >And hit this line to open YouTube</a
-    ><br />
-    <a href="https://tiktok.com/@mohib_naikzad"
-      >Finally Click here to visit my Tiktok account</a
-    ><br />
-    <a href="Files/files.html"> Click here If you want to read beautiful Islamic stories</a><hr />
-    <a href= "personal_photos.html">A collection of my photos<a>
-  </body>
+            <section class="keypad">
+                <button class="key" data-val="7">7</button>
+                <button class="key" data-val="8">8</button>
+                <button class="key" data-val="9">9</button>
+                <button class="key" data-val="4">4</button>
+                <button class="key" data-val="5">5</button>
+                <button class="key" data-val="6">6</button>
+                <button class="key" data-val="1">1</button>
+                <button class="key" data-val="2">2</button>
+                <button class="key" data-val="3">3</button>
+                <button class="key" data-val=".">.</button>
+                <button class="key" data-val="0">0</button>
+                <button class="key action" data-val="clear">C</button>
+            </section>
+        </main>
+        
+        <div class="home-bar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
